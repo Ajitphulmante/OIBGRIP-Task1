@@ -3,9 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="index.css">
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +34,15 @@
       <div class="number" id="8" onclick="insert(8)">8</div>
       <div class="number" id="9" onclick="insert(9)">9</div>
       <div class="number" id="*" onclick="insert('*')">*</div>
-      <div class="number" id="eq" onclick="equal()">Eq</div>
+      <div class="number" id="=" onclick="backspace()">←</div>
       <div class="number" id="0" onclick="insert(0)">0</div>
       <div class="number" id="c" onclick="Clear()">c</div>
       <div class="number" id="/" onclick="insert('/')">/</div>
 
     </div>
     <br>
-    <span class="number" id="b" onclick="backspace()">backspace</span>
+    <span class="number" id="b" onclick="equal()">=</span>
+  
   </div>
 
 </body>
